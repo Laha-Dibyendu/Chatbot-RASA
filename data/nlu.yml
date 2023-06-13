@@ -1,0 +1,297 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - what's up
+    - good to meet you
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - seeya
+    - over and out
+    - ok bye
+    - logging out
+    - meet you next time
+    - bye for now
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - yea
+    - ya
+    - for sure
+    - accepted
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - nah
+    - na
+    - nooo
+    - nooooooooooooooo
+    - it can't be
+    - not possible
+    - not happening
+    - not working
+    - nope
+    - not going to work
+    - not the way
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - It's going good
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - who are you?
+    - are you real?
+    - who is this?
+    - seems like you are a bot
+    - are you really a bot?
+    - I think you are a human
+    - I am sure that you are a bot
+
+- intent: query_features
+  examples: |
+    - what are the main features of the website?
+    - can i get a list of all the features?
+    - tell me the key features
+    - list all the things the website can help me on
+    - list all things
+    - list everything
+    - tell about this website
+    - what are the things this website can do?
+    - how to use this website?
+    - why should i use this website?
+
+- intent: subscription_query
+  examples: |
+    - what is the difference between paid and free model?
+    - what's new in paid version?
+    - paid vs unpaid version
+    - why should i take paid version?
+    - tell me about paid model
+    - what is better in paid version?
+    - why to take paid model?
+    - list extra things i get by paying
+    - why should i pay?
+    - benefits of paid version?
+    - what's more in paid version?
+    - what are the offers for taking subscription?
+    - why should I take subscription?
+    - difference in taking subscription vs not taking subscription
+    - what's new in subscription model?
+    - benefits of taking subscription
+    - Will I get any discount on subscriptions?
+
+- intent: job_field_query
+  examples: |
+    - tell about the trending job fields
+    - which are the top grossing subjects for jobs?
+    - which field has more job oppourtunity
+    - field that is should choose for job
+    - top job fields
+    - how to know which field has more job opportunities?
+    - list of fields that has better opportunity
+    - tell me the fields with better job opportunity 
+    - fields that are best to choose
+    - job fields that are future proof
+
+- intent: live_exam_query
+  examples: |
+    - what are the exams live now?
+    - tell me the list of exams which registrations are live
+    - how to know about live exams?
+    - exams to register now
+    - how to know ongoing exam registrations
+    - list of current exams
+    - how to know about ongoing exams?
+    - ongoing exams
+    - live exams 
+    - upcoming exams
+    - upcoming important exams
+
+- intent: college_query
+  examples: |
+    - how to know about best colleges?
+    - top colleges in tamilnadu
+    - best college for studying engineering
+    - top 10 colleges to study science
+    - top arts colleges in Tamilnadu
+    - best colleges in india
+    - top medical college in tamilnadu
+    - top 5 colleges for medical
+    - best college to study commerce
+    - top college to study arts in tamilnadu
+    - give me a list of best colleges for science all over india
+    - can you give me best 5 colleges for engineering
+    - list of no. 1 college in tamilnadu for mba
+    - top 3 colleges for jobs
+    - how to know about top colleges in tamilnadu?
+
+- intent: course_compare_faq
+  examples: |
+    - what is course comparison?
+    - how does course comparison work?
+    - what is meant by course comparison?
+    - course comparison
+    - how to do course comparison?
+    - course comparison what is it?
+
+- intent: college_compare_faq
+  examples: |
+    - what is college comparison?
+    - how does college comparison work?
+    - what is meant by college comparison?
+    - college comparison
+    - how to do college comparison?
+    - college comparison what is it?
+
+- intent: alert_query
+  examples: |
+    - what is meant by customised exam alerts?
+    - how will the alerts come?
+    - what are alerts?
+    - how to get alerts?
+    - exam alerts?
+    - do i only get alerts for exams
+    - tell me more about alerts
+    - describe about exam alerts
+
+- intent: gap_query
+  examples: |
+    - What is a gap analysis
+    - how to take a gap analysis?
+    - i have a gap in my career what to do?
+    - will my career gap affect in job?
+    - how can i do gap analysis
+    - how to do gap analysis
+
+- intent: course_join_query
+  examples: |
+    - How to join a course
+    - process to join courses
+    - course join
+    - join course
+    - i want to join a course
+    - how can i join the course on jee
+    - where can i select the courses to join
+
+- intent: course_faq
+  examples: |
+    - will I get certificates for doing the courses
+    - which courses are best for getting Jobs
+    - Are the courses free?
+    - What are the things offered in a course?
+    - how to choose the best subject to study?
+    - what is the way to choose courses
+
+- intent: mentor_query
+  examples: |
+    - Who are the mentors
+    - Can I change my mentor later If I don't like it?
+    - for how long I will get mentor guidance
+    - are the mentors qualified enough?
+
+- intent: mentorship_faq
+  examples: |
+    - How can I get a mentor?
+    - will the mentor guidance be free?
+    - what is mentor support?
+    - how to connect with a mentor?
+    - how can i get a mentor?
+    - how to get mentor advice?
+    - tell me about mentor programme
+    - Ways i can get support from mentor
+    - what's mentor support?
+    - how to talk with a mentor?
+    - can i talk to some industry professional?
+    - how to get advice?
+    - want to talk to someone about my career.
+
+- intent: job_internship_faq
+  examples: |
+    - which job is the highest paying job
+    - Will I get mock interviews and training before the internship or job interview
+    - how will i get internship
+    - will i get job support?
+    - how will i get internship
+    - what are the median salary packages students get
+    - 
+
+- intent: fitment_query
+  examples: |
+    - How to give a fitment test
+    - how fitment analysis is done?
+    - how it is checked if I am fit for the job or not?
+    - What are the metrics used to measure if I am fit for the job or not

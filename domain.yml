@@ -1,0 +1,83 @@
+version: "3.1"
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - query_features
+  - paid_unpaid_query
+  - mentorship_faq
+  - job_field_query
+  - live_exam_query
+  - college_query
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_features:
+  - text: "We provide end to end career guidance. Through this website you can create a better future.\n
+          The list of features of our website are the following:\n
+          1. Career comparison\n
+          2. College comparison\n
+          3. Course comparison\n
+          4. Customize exam alerts\n
+          5. One on One mentoring\n
+          6. Career analysis through question answer"
+  
+  utter_paid_unpaid:
+  - text: "While anyone can use our website for free,\n
+          here are the things that one can avail through paid membership\n
+          - All limited links\n
+          - Analytics platform\n
+          - Chat support\n
+          - Unlimited.\n
+          Check more {link}"
+  
+  utter_mentorship:
+  - text: "Our mentorship is focused on helping the students to choose right career path based on industry trend.\n
+          The mentors are mainly industry professionals who have been in the industry for more than 10 years.\n
+          To know more about mentorship please follow the [link](https://xd.adobe.com/view/b512b39f-545e-4648-885a-77b070200501-e041/screen/b9ab1b49-963c-4724-ab2d-cd66bc95013c?fullscreen)"
+
+  utter_job:
+  - text: "Please follow this [link](https://xd.adobe.com/view/b512b39f-545e-4648-885a-77b070200501-e041/?fullscreen) to resolve allyour queries related to job."
+
+  utter_check:
+  - text: "You can check out our website and FAQ page to get more clarification."
+
+actions:
+- utter_greet
+- utter_cheer_up
+- utter_did_that_help
+- utter_happy
+- utter_goodbye
+- utter_iamabot
+- utter_features
+- utter_paid_unpaid
+- utter_mentorship
+- utter_job
+- utter_check
+- action_dynamic_link
